@@ -1,0 +1,17 @@
+{
+  "name": "playwright-reading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test-ui": "playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "private",
+  "devDependencies": {
+    "@playwright/test": "^1.36.2",
+    "prettier": "^3.0.1"
+  }
+}
