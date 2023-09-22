@@ -1,21 +1,14 @@
-import { Page, test } from "@playwright/test";
+import { test } from "@playwright/test";
 import { ReadAssignmentsPage } from "../page-objects/read-assignments.page";
 import { WikiPage } from "../page-objects/wiki.page";
+import { LoginPage } from "../page-objects/login.page";
 
-async function login(page: Page) {
-  const emailInput = page.locator("css=.sign-in-box input[type=email]");
-  await emailInput.fill("stefan.bley@zeiss.com");
-
-  const nextButton = page.locator("css=.sign-in-box input[type=submit]");
-  await nextButton.click();
-}
-
-test("confirm read assignments", async ({ page }, testInfo) => {
+test("confirm read assignments", async ({ page }) => {
   const readAssignmentsPage = new ReadAssignmentsPage(page);
 
   await readAssignmentsPage.open();
 
-  await login(page);
+  await new LoginPage(page).login("stefan.bley@zeiss.com");
 
   await readAssignmentsPage.waitToBeDisplayed();
   while (await readAssignmentsPage.hasOpenReadAssignments()) {
