@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test";
 
 export class WikiPage {
-  private readonly mainUrl = "https://zdi-wiki.zeiss.com/display/**";
+  private readonly mainUrl = /https:\/\/zdi-wiki.zeiss.com\/(pages|display)\/.+/;
   private page: Page;
 
   constructor(page: Page) {
