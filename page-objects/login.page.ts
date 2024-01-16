@@ -7,14 +7,6 @@ export class LoginPage {
     this.page = page;
   }
 
-  async confirmAsRead() {
-    const confirmButton = this.page.locator("css=.cra-read-button");
-    await confirmButton.scrollIntoViewIfNeeded();
-
-    await confirmButton.click();
-    await this.page.locator("id=cw-confirm-accept").click();
-  }
-
   async login(username: string) {
     const emailInput = this.page.locator("css=.sign-in-box input[type=email]");
     await emailInput.fill(username);
