@@ -12,8 +12,8 @@
   "author": "Stefan Bley",
   "license": "private",
   "devDependencies": {
-    "@playwright/test": "^1.40.0",
-    "@types/node": "^20.10.0",
-    "prettier": "^3.1.0"
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.16",
+    "prettier": "^3.2.5"
   }
 }
