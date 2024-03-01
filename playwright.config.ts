@@ -36,14 +36,8 @@ export default defineConfig({
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
-        launchOptions: { headless: false },
-        contextOptions: { screen: { width: 500, height: 500 } },
-        viewport: { width: 300, height: 300 },
+        launchOptions: { headless: true },
       },
-    },
-    {
-      name: "Microsoft Edge",
-      use: { ...devices["Desktop Edge"], channel: "msedge" },
     },
   ],
 
