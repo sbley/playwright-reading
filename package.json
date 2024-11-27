@@ -1,6 +1,6 @@
 {
   "name": "playwright-reading",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,8 @@
   "author": "Stefan Bley",
   "license": "private",
   "devDependencies": {
-    "@playwright/test": "^1.47.2",
-    "@types/node": "^22.7.4",
-    "prettier": "^3.3.3"
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "prettier": "^3.4.1"
   }
 }
