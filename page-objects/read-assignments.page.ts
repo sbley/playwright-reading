@@ -1,4 +1,4 @@
-import { expect, Page } from "@playwright/test";
+import { Page } from "@playwright/test";
 
 export class ReadAssignmentsPage {
   private readonly url = "https://zdi-wiki.zeiss.com/users/readack/view.action";
